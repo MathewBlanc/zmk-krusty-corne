@@ -280,7 +280,7 @@
    &none	&kp EXCL	&kp AT    	&kp GT      	&pths		&none	         	&none    	&bkts		&star_and      	&kp SLASH	&kp BACKSLASH	&none
    &none	&perc_hash    	&dol_hat    	&kp LT	 	&stop_comma	&none   	 	&none		&braces		&apo_quote	&kp MINUS	&kp EQUAL	&none
    &none	&none	 	&none 		&none 		&none	 	&none   	 	&none	 	&none  		&none		&none		&none		&none
-                  				&none	 	&none	 	&LSHIFT			&trans		&kp TILDE 	&none
+                  				&none	 	&none	 	&kp LSHIFT		&trans		&kp TILDE 	&none
                 	>;
                 };
                 media_layer {
