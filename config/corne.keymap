@@ -159,6 +159,13 @@
     };
 
         behaviors {
+	ex_at: exclamation_shift_at {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EXCLAMATION_SHIFT_AT";
+            #binding-cells = <0>;
+            bindings = <&kp EXCLAMATION>, <&kp AT>;
+	    mods = <(MOD_LSFT)>;
+        };
         perc_hash: percent_shift_hash {
             compatible = "zmk,behavior-mod-morph";
             label = "PERCENT_SHIFT_HASH";
@@ -173,11 +180,18 @@
             bindings = <&kp DOLLAR>, <&kp CARET>;
 	    mods = <(MOD_LSFT)>;
         };
-	stop_comma: stop_shift_comma {
+	stop_col: stop_shift_colon {
             compatible = "zmk,behavior-mod-morph";
-            label = "STOP_SHIFT_COMMA";
+            label = "STOP_SHIFT_COLON";
             #binding-cells = <0>;
-            bindings = <&kp PERIOD>, <&kp COMMA>;
+            bindings = <&kp PERIOD>, <&kp COLON>;
+	    mods = <(MOD_LSFT)>;
+        };
+	comm_semi: comma_shift_semicolon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SHIFT_SEMICOLON";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
 	    mods = <(MOD_LSFT)>;
         };
 	apo_quote: apostrophe_shift_quotes {
@@ -273,16 +287,16 @@
 
                 nav_layer {
                 bindings = <
-   &none	&kp LG(X)	&kp LG(V)    	&kp LG(C)       &kp BSPC	&none	         	&none    	&kp SPACE	&kp UP         	&kp BSPC	&kp DEL		&none
-   &none	&kp ESC    	&sk LSHIFT    	&sk RALT 	&sk RGUI	&none   	 	&none		&kp LEFT	&kp DOWN	&kp RIGHT	&kp LG(Z)	&none
+   &none	&kp ESC		kp LG(X)	&kp LG(V)    	&kp LG(C)	&none	         	&none    	&none		&kp UP         	&kp BSPC	&kp DEL		&none
+   &none	&none    	&sk LSHIFT    	&sk RALT 	&sk RGUI	&none   	 	&none		&kp LEFT	&kp DOWN	&kp RIGHT	&kp LG(Z)	&none
    &none	&none	 	&none 		&none 		&none	 	&none   	 	&none	 	&none  		&none		&none		&none		&none
                   				&none	 	&sk RCTRL 	&trans			&kp TAB		&kp TILDE 	&none
                 	>;
                 };
                 symbol_layer {
                 bindings = <
-   &none	&kp EXCL	&kp AT    	&kp GT      	&pths		&none	         	&none    	&bkts		&star_and      	&kp SLASH	&kp BACKSLASH	&none
-   &none	&perc_hash    	&dol_hat    	&kp LT	 	&stop_comma	&none   	 	&none		&braces		&apo_quote	&kp MINUS	&kp EQUAL	&none
+   &none	&ex_at		&kp LT    	&kp GT      	&pths		&none	         	&none    	&braces		&bkts      	&kp SLASH	&kp BACKSLASH	&none
+   &none	&perc_hash    	&dol_hat    	&star_and 	&stop_col	&none   	 	&none		&comm_semi	&apo_quote	&kp MINUS	&kp EQUAL	&none
    &none	&none	 	&none 		&none 		&none	 	&none   	 	&none	 	&none  		&none		&none		&none		&none
                   				&none	 	&none	 	&kp LSHIFT		&kp TILDE	&trans	 	&none
                 	>;
