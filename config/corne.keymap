@@ -152,8 +152,7 @@
 	    wait-ms = <40>;
 	    tap-ms = <40>;
             bindings
-                = <&kp LBKT &kp RBKT>
-                , <&kp LEFT>
+                = <&kp LBKT &kp RBKT &kp LEFT>
                 ;
         };
     };
