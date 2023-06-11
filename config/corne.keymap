@@ -286,7 +286,7 @@
 
                 nav_layer {
                 bindings = <
-   &none	&kp ESC		kp LG(X)	&kp LG(V)    	&kp LG(C)	&none	         	&none    	&none		&kp UP         	&kp BSPC	&kp DEL		&none
+   &none	&kp ESC		&kp LG(X)	&kp LG(V)    	&kp LG(C)	&none	         	&none    	&none		&kp UP         	&kp BSPC	&kp DEL		&none
    &none	&none    	&sk LSHIFT    	&sk RALT 	&sk RGUI	&none   	 	&none		&kp LEFT	&kp DOWN	&kp RIGHT	&kp LG(Z)	&none
    &none	&none	 	&none 		&none 		&none	 	&none   	 	&none	 	&none  		&none		&none		&none		&none
                   				&none	 	&sk RCTRL 	&trans			&kp TAB		&kp TILDE 	&none
