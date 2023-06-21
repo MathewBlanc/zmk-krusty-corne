@@ -48,6 +48,12 @@
 	    layers = <0>;
             bindings = <&kp Q>;
         };
+	combo_q2 {
+            timeout-ms = <50>;
+            key-positions = <1 2 3>;
+	    layers = <0>;
+            bindings = <&kp Q>;
+        };
 	combo_x {
             timeout-ms = <50>;
             key-positions = <1 13>;
@@ -75,6 +81,12 @@
 	combo_j {
             timeout-ms = <50>;
             key-positions = <9 10>;
+	    layers = <0>;
+            bindings = <&kp J>;
+        };
+	combo_j2 {
+            timeout-ms = <50>;
+            key-positions = <8 9 10>;
 	    layers = <0>;
             bindings = <&kp J>;
         };
