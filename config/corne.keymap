@@ -144,6 +144,12 @@
 	    layers = <0>;
             bindings = <&kp TAB>;
         };
+	combo_tilde {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+	    layers = <0>;
+            bindings = <&kp GRAVE>;
+        };
 	combo_layer_media {
             timeout-ms = <50>;
             key-positions = <38 39>;
@@ -331,7 +337,7 @@
    &none	&kp ESC		&kp LG(X)	&kp LG(V)    	&kp LG(C)	&none	         	&none    	&kp LA(BSPC)	&kp UP         	&kp LA(DEL)	&kp DEL		&none
    &none	&kp RCTRL    	&sk LSHIFT    	&sk RALT 	&sk RGUI	&none   	 	&none		&kp LEFT	&kp DOWN	&kp RIGHT	&kp LG(Z)	&none
    &none	&none	 	&none 		&none 		&none	 	&none   	 	&none	 	&none  		&none		&none		&none		&none
-                  				&none	 	&kp TAB	 	&trans			&kp TAB		&kp TILDE 	&none
+                  				&none	 	&kp TAB	 	&trans			&kp TAB		&kp GRAVE 	&none
                 	>;
                 };
                 symbol_layer {
