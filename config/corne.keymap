@@ -22,15 +22,15 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_ret1 {
+        combo_COMMA {
             timeout-ms = <50>;
             key-positions = <3 4>;
-            bindings = <&kp ENTER>;
+            bindings = <&kp COMMA>;
         };
-	combo_ret2 {
+	combo_PERIOD {
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&kp ENTER>;
+            bindings = <&kp PERIOD>;
         };
 	combo_backspace {
             timeout-ms = <75>;
@@ -42,17 +42,29 @@
             key-positions = <19 20>;
             bindings = <&kp SPACE>;
         };
-	combo_q {
+	combo_ret {
             timeout-ms = <50>;
             key-positions = <1 2>;
 	    layers = <0>;
-            bindings = <&kp Q>;
+            bindings = <&kp ENTER>;
         };
 	combo_q2 {
             timeout-ms = <50>;
             key-positions = <1 2 3>;
 	    layers = <0>;
             bindings = <&kp Q>;
+        };
+	combo_change_window {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+	    layers = <0>;
+            bindings = <&kp LG(TILDE)>;
+        };
+	combo_change_app {
+            timeout-ms = <50>;
+            key-positions = <14 15>;
+	    layers = <0>;
+            bindings = <&kp LG(TAB)>;
         };
 	combo_x {
             timeout-ms = <50>;
@@ -78,11 +90,11 @@
 	    layers = <0>;
             bindings = <&kp K>;
         };
-	combo_j {
+	combo_ret2 {
             timeout-ms = <50>;
             key-positions = <9 10>;
 	    layers = <0>;
-            bindings = <&kp J>;
+            bindings = <&kp ENTER>;
         };
 	combo_j2 {
             timeout-ms = <50>;
@@ -123,6 +135,12 @@
 	combo_tab {
             timeout-ms = <50>;
             key-positions = <37 38>;
+	    layers = <0>;
+            bindings = <&kp TAB>;
+        };
+	combo_tab2 {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
 	    layers = <0>;
             bindings = <&kp TAB>;
         };
